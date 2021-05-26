@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34ed1154.chunk.css",
+    "main.js": "/static/js/main.c0e596aa.chunk.js",
+    "main.js.map": "/static/js/main.c0e596aa.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.fa7620a3.chunk.js": "/static/js/2.fa7620a3.chunk.js",
+    "static/js/2.fa7620a3.chunk.js.map": "/static/js/2.fa7620a3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f7442ba52984acb61bd36587999e7154.js": "/precache-manifest.f7442ba52984acb61bd36587999e7154.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.34ed1154.chunk.css.map": "/static/css/main.34ed1154.chunk.css.map",
+    "static/media/comnet.png": "/static/media/comnet.e56e22b2.png",
+    "static/media/comnetComp.png": "/static/media/comnetComp.45007168.png",
+    "static/media/conventer.png": "/static/media/conventer.3c355a78.png",
+    "static/media/conventerComp.png": "/static/media/conventerComp.d3303459.png",
+    "static/media/grawernia.png": "/static/media/grawernia.3efc96f7.png",
+    "static/media/grawerniaComp.png": "/static/media/grawerniaComp.e5d39302.png",
+    "static/media/logoblack.png": "/static/media/logoblack.b814dcca.png",
+    "static/media/weather.png": "/static/media/weather.fc509492.png",
+    "static/media/weatherComp.png": "/static/media/weatherComp.7fad2a5b.png",
+    "static/media/zdj2.jpg": "/static/media/zdj2.09f9208a.jpg"
+  }
+}
