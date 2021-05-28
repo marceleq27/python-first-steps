@@ -5,9 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Gallery</title>
+    <style>
+      .img-container {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 40px;
+      }
+      .img-container img {
+        overflow: hidden;
+        max-width: 300px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>gallery</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="{{ url_for('aboutme') }}" class="nav-link">About me</a>
+        </li>
+        <li class="nav-item active"><a href="{{ url_for('gallery') }}" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="img-container mt-5">
+        <img src="https://source.unsplash.com/random/300x300" alt="unsplash" class="img-fluid" /><img
+          src="https://source.unsplash.com/random/300x300"
+          alt="unsplash"
+          class="img-fluid"
+        /><img src="https://source.unsplash.com/random/300x300" alt="unsplash" class="img-fluid" /><img
+          src="https://source.unsplash.com/random/300x300"
+          alt="unsplash"
+          class="img-fluid"
+        /><img src="https://source.unsplash.com/random/300x300" alt="unsplash" /><img
+          src="https://source.unsplash.com/random/300x300"
+          alt="unsplash"
+          class="img-fluid"
+        />
+      </div>
+    </div>
   </body>
 </html>
