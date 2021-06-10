@@ -11,8 +11,9 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <title>Contact</title>
+    <title>Guests</title>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <ul class="navbar-nav mr-auto">
@@ -21,36 +22,36 @@
           <a href="{{ url_for('aboutme') }}" class="nav-link">About me</a>
         </li>
         <li class="nav-item"><a href="{{ url_for('gallery') }}" class="nav-link">Gallery</a></li>
-        <li class="nav-item active"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="{{ url_for('guests') }}" class="nav-link">Guests</a></li>
+        <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a href="{{ url_for('guests') }}" class="nav-link active">Guests</a></li>
       </ul>
     </nav>
     <div class="container mt-5">
-      <h1>Let's talk</h1>
-      <a href="mailto:marcel.bednarz16@gmail.com">Message me!</a>
-    </div>
-    <div class="container mt-4">
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email</label>
+      <form method="post" action="/add">
+        <div class="mb-3">
+          <label for="exampleInputNick1" class="form-label">Nick</label>
           <input
-            type="email"
+            type="text"
             class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Email"
+            id="exampleInputNick1"
+            name="exampleInputNick1"
+            aria-describedby="nickHelp"
           />
         </div>
-        <div class="form-group">
-          <label for="exampleInputNick">Nick</label>
-          <input type="test" class="form-control" id="exampleInputNick" placeholder="Your nick" />
+        <div class="mb-3">
+          <label for="exampleInputText1" class="form-label">Text</label>
+          <input type="text" class="form-control" id="exampleInputText1" name="exampleInputText1" />
         </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Example textarea</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <div class="mb-3">
+          <label for="exampleInputDate1" class="form-label">Date</label>
+          <input type="text" class="form-control" id="exampleInputDate1" name="exampleInputDate1" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <button type="submit" class="btn btn-primary mb-4">Submit</button>
       </form>
+      <h1>Lista komentarzy :</h1>
+      <br />
+      {% block content %} {% endblock %}
     </div>
   </body>
 </html>

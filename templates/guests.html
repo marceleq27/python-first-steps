@@ -1,0 +1,12 @@
+{% extends "layoutguests.html" %} {% block content %} {% for result in data %}
+<div style="display: flex; align-items: center">
+  <p><strong>{{ result .name }}</strong> napisał/a {{ result . text }} | Data: <span>{{result . date}}</span></p>
+  <form method="post" class="ml-5" action="/delete/{{result . date}}">
+    <div class="mb-3">
+      <input type="submit" class="form-control" id="exampleInputDelete1" name="{{result .name}}" value="Delete" />
+    </div>
+  </form>
+</div>
+{% else %}
+<p>Brak wpisów</p>
+{% endfor %} {% endblock %}
