@@ -1,0 +1,5 @@
+AZDBSERVER = 'bazawsbmarcel.database.windows.net'
+AZDBNAME = 'Baza'
+AZDBUSER = 'MarcelWsb'
+AZDBPW = 'WsbMarcel123'
+AZDBDRIVER = '{ODBC Driver 17 for SQL Server}'
