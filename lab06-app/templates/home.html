@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muzyka</title>
+  </head>
+  <body>
+    <h1>Sprawdźmy co jes grane</h1>
+    <p>Do wyboru: kizo, mata, ekipa, pezet</p>
+    <form action="/" method="POST">
+      <input name="artist" placeholder="Wpisz nazwę artysty" />
+      <input type="submit" />
+    </form>
+    {% if data %} {% for result in data.songs %}
+    <div style="padding: 8px; border: 1px solid black; margin: 16px 0">
+      <h1>Tytuł: {{result.title}}</h1>
+      <h3>Artysta: {{result.artist}}</h3>
+      <p>Album: {{result.album}}</p>
+      <span>Czas trwania: {{result.time}}</span>
+      <em>Typ nagrania: {{result.type}}</em>
+    </div>
+    {% endfor %} {% endif %}
+    <p>Dostawca API : Ja</p>
+  </body>
+</html>
